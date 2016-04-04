@@ -1,11 +1,11 @@
 @all
-Feature: Assurity Services Page
-  As a customer, I want to view Assurity services page, so that I know what Assurity's services are
+Feature: PassionTea Menu Page
+  As a customer, I want to view PassionTea menu page, so that I know what PassionTea's menu is
 
-  Background: Assurity Services Page UI & Functional Testing
+  Background: PassionTea Menu Page UI & Functional Testing
 
-  Scenario: Navigate to Assurity's Services Page
-    When I open Assurity services page URL
-    When I view all the banner images
-    When I view all the service line
-    Then I should land at correct services page
+  Scenario: Navigate to PassionTea's Menu Page
+    Given I open PassionTea menu page URL
+    When I capture picture of menu page
+    And I check out "Oolong Tea"
+    Then I should land at check out page
