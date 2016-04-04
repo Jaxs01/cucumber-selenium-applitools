@@ -1,10 +1,11 @@
 @all
-Feature: Assurity About Us Page
-  As a customer, I want to view Assurity aboutus page, so that I know who Assurity is
+Feature: PassionTea Menu Page
+  As a customer, I want to view PassionTea menu page, so that I know what PassionTea's menu is
 
-  Background: Assurity About Us Page UI & Functional Testing
+  Background: PassionTea Menu Page UI & Functional Testing
 
-  Scenario: Navigate to Assurity's AboutUs Page
-    When I open Assurity aboutus page URL
-    And I view all the about us images
-    Then I should land at correct aboutus page
+  Scenario: Navigate to PassionTea's Menu Page
+    Given I open PassionTea menu page URL
+    When I capture picture of menu page
+    And I check out "Oolong Tea"
+    Then I should land at check out page
