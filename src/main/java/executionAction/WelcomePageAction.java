@@ -69,5 +69,4 @@ public class WelcomePageAction {
         PublicFunctions.captureLogo(driver.findElement(By.xpath("//*[@id=\"wsb-element-00000000-0000-0000-0000-000450914892\"]/div/div/a/img")), _Constants.WelcomePageScreenshot);
         PublicFunctions.captureLogo(driver.findElement(By.xpath("//*[@id=\"wsb-element-00000000-0000-0000-0000-000450914891\"]/div/div/a/img")), _Constants.WelcomePageScreenshot);
     }
-
 }

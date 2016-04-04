@@ -1,4 +1,4 @@
-@alll
+@all
 Feature: PassionTea Welcome Page
   As a customer, I want to view PassionTea home page, so that I know what PassionTea is
 

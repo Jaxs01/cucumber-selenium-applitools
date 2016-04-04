@@ -1,11 +1,10 @@
 @all
-Feature: Assurity Clients Page
-  As a customer, I want to view Assurity clients page, so that I know what Assurity's clients are
+Feature: PassionTea Passion Page
+  As a customer, I want to view PassionTea passion page, so that I know what PassionTea's passion is
 
-  Background: Assurity Clients Page UI & Functional Testing
+  Background: PassionTea Passion Page UI & Functional Testing
 
-  Scenario: Navigate to Assurity's Clients Page
-    When I open Assurity clients page URL
-    When I view all the clients
-    When I view all the case studies
-    Then I should land at correct clients page
+  Scenario: Navigate to PassionTea's Passion Page
+    When I open PassionTea passion page URL
+    And I capture picture of passion page
+    Then I should land at correct passion page
