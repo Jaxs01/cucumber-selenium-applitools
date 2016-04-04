@@ -1,9 +1,11 @@
 @all
-Feature: Assurity Community Page
-  As a customer, I want to view Assurity community page, so that I know what Assurity's community is
+Feature: PassionTea CheckOut Page
+  As a customer, I want to view PassionTea checkout page, so that I know what PassionTea's check out is
 
-  Background: Assurity Community Page UI & Functional Testing
+  Background: PassionTea Check Out Page UI & Functional Testing
 
-  Scenario: Navigate to Assurity's Community Page
-    When I open Assurity community page URL
-    Then I should land at correct community page
+  Scenario: Navigate to PassionTea's Check Out Page
+    Given I open PassionTea checkout page URL
+    When I fill in the customer form with "di.zhang@assurity.co.nz", "Di" and "Wellington"
+    And I fill in the payment form with "visa", "50505050", "Di" and "123456"
+    Then I should go back to menu page
