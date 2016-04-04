@@ -5,7 +5,6 @@ Feature: PassionTea Menu Page
   Background: PassionTea Menu Page UI & Functional Testing
 
   Scenario: Navigate to PassionTea's Menu Page
-    Given I open PassionTea menu page URL
-    When I capture picture of menu page
-    And I check out "Oolong Tea"
-    Then I should land at check out page
+    Given I open PassionTea talk-to-tea page URL
+    When I fill in the form with "Di", "di.zhang@assurity.co.nz", "Test", "Hello, Test" and submit
+    Then I should see successful message

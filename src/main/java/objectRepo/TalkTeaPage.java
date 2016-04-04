@@ -7,14 +7,16 @@ import org.openqa.selenium.support.FindBy;
  * Created by zhangd on 4/04/2016.
  */
 public class TalkTeaPage {
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[18]/div/div[1]/div[1]/input")
+    @FindBy(xpath = ".//*[@id='form_78ea690540a24bd8b9dcfbf99e999fea']/div[1]/div[1]/input")
     public WebElement textName;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[18]/div/div[1]/div[2]/input")
+    @FindBy(name = "email")
     public WebElement textEmail;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[18]/div/div[1]/div[3]/input")
+    @FindBy(name = "subject")
     public WebElement textSubject;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[18]/div/div[1]/div[4]/textarea")
+    @FindBy(xpath = ".//*[@id='form_78ea690540a24bd8b9dcfbf99e999fea']/div[1]/div[4]/textarea")
     public WebElement textareaMessage;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[18]/div/div[1]/div[5]/input")
+    @FindBy(className = "form-submit")
     public WebElement btnSubmit;
+    @FindBy(id = ".//*[@id='msg_78ea690540a24bd8b9dcfbf99e999fea']")
+    public WebElement textSuccessfulMsg;
 }

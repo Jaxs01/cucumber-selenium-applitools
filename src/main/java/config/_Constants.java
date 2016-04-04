@@ -25,7 +25,7 @@ public class _Constants {
     // Talk to Tea Page
     public static final String TalkTeaPageURL = "http://www.practiceselenium.com/let-s-talk-tea.html";
     public static final String TalkTeaPageTitle = "Let's Talk Tea";
-    public static final String TalkTeaPageScreenshot = "screenshot/TestCase002_TalkTeaPage";
+    public static final String TalkTeaPageScreenshot = "screenshot/TestCase004_TalkTeaPage";
 
     // CheckOut Page
     public static final String CheckOutPageURL = "http://www.practiceselenium.com/check-out.html";
