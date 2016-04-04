@@ -23,11 +23,11 @@ public class TestCase003StepsDef {
 
     @When("^I capture picture of menu page$")
     public void I_captured_picture_of_menu_page() throws Throwable {
-        mpa.captureWelcomePageLogo();
+        mpa.captureMenuPageLogo();
     }
 
     @And("^I check out \"([^\"]*)\"$")
-    public void I_check_out_green_tea(String tea) throws Throwable {
+    public void I_check_out_tea(String tea) throws Throwable {
         mpa.clickCheckOut(tea);
     }
 
