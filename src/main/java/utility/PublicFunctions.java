@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.internal.WrapsDriver;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -36,14 +37,11 @@ public class PublicFunctions {
         try {
             // Capture logo
             captureElementBitmap(element, dirLoction);
-            System.out.println(element.getAttribute("alt") + "captureLogo function is correct");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            System.out.println(element.getAttribute("alt") + "captureLogo function is incorrect");
         }
     }
-
 
     /**
      * Capture a specific web element on the page
