@@ -1,5 +1,5 @@
 @all
-Feature: PassionTea Menu Page
+Feature: PassionTea TalkTeaPage Page
   As a customer, I want to view PassionTea menu page, so that I know what PassionTea's menu is
 
   Background: PassionTea Menu Page UI & Functional Testing

@@ -1,21 +1,16 @@
 package passionTea;
 
-import config._Constants;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import executionAction.TalkTeaPageAction;
 import objectRepo.TalkTeaPage;
-import org.junit.Assert;
-import utility.BrowserDriver;
 
 /**
  * Created by zhangd on 4/04/2016.
  */
 public class TestCase004StepsDef {
     private static TalkTeaPageAction ttpa;
-    private static TalkTeaPage ttp;
 
     @Given("^I open PassionTea talk-to-tea page URL$")
     public void I_open_PassionTea_talktotea_page_URL() throws Throwable {
