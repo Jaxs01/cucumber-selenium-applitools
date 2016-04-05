@@ -15,16 +15,16 @@ public class TestCase005StepsDef {
     private static CheckOutPageAction copa;
 
     @Given("^I open PassionTea checkout page URL$")
-    public void I_open_PassionTea_talktotea_page_URL() throws Throwable {
+    public void I_open_PassionTea_checkout_page_URL() throws Throwable {
         copa = new CheckOutPageAction();
     }
 
-    @When("^I fill in the customer form with \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
+    @When("^I fill in the customer form with \'([^\"]*)\', \'([^\"]*)\' and \'([^\"]*)\'$")
     public void I_fill_in_the_customer_form(String email, String name, String address) throws Throwable {
         copa.fillCustomerInfo(email, name, address);
     }
 
-    @When("^I fill in the payment form with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
+    @When("^I fill in the payment form with \'([^\"]*)\', \'([^\"]*)\', \'([^\"]*)\' and \'([^\"]*)\'$")
     public void I_fill_in_the_payment_form(String cardType, String cardNo, String cardholderName, String verificationCode) throws Throwable {
         copa.fillPaymentInfo(cardType, cardNo, cardholderName, verificationCode);
     }
