@@ -7,7 +7,7 @@
     <groupId>PassionTea-Automation-Framework</groupId>
     <artifactId>PassionTea-Automation-Framework</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Assurity-Cucumber-Selenium-Framework-V2</name>
+    <name>PassionTea-Automation-Framework</name>
 
     <properties>
         <java.version>1.8</java.version>
