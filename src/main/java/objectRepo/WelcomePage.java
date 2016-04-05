@@ -7,14 +7,14 @@ import org.openqa.selenium.support.FindBy;
  * Created by zhangd on 4/04/2016.
  */
 public class WelcomePage {
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[13]/div/ul/li[1]/a")
+    @FindBy(linkText = "Welcome")
     public WebElement navbarWelcome;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[13]/div/ul/li[2]/a")
+    @FindBy(linkText = "Our Passion")
     public WebElement navbarPassion;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[13]/div/ul/li[3]/a")
+    @FindBy(linkText = "Menu")
     public WebElement navbarMenu;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[13]/div/ul/li[4]/a")
+    @FindBy(linkText = "Let's Talk Tea")
     public WebElement navbarTalkTea;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[13]/div/ul/li[5]/a")
+    @FindBy(linkText = "Check Out")
     public WebElement navbarCheckOut;
 }

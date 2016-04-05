@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
  * Created by zhangd on 4/04/2016.
  */
 public class MenuPage {
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[16]/div/a/span")
+    @FindBy(xpath = ".//*[@id='wsb-button-00000000-0000-0000-0000-000451955160']/span")
     public WebElement btnCheckOutGreenTea;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[15]/div/a/span")
+    @FindBy(xpath = ".//*[@id='wsb-button-00000000-0000-0000-0000-000451959280']/span")
     public WebElement btnCheckOutRedTea;
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[27]/div/a/span")
+    @FindBy(xpath = ".//*[@id='wsb-button-00000000-0000-0000-0000-000451961556']/span")
     public WebElement btnCheckOutOolongTea;
 }
