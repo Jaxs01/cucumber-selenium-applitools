@@ -20,17 +20,17 @@ public class TestCase005StepsDef {
     }
 
     @When("^I fill in the customer form with \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void I_fill_in_the_forffm(String email, String name, String address) throws Throwable {
+    public void I_fill_in_the_customer_form(String email, String name, String address) throws Throwable {
         copa.fillCustomerInfo(email, name, address);
     }
 
     @When("^I fill in the payment form with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void I_fill_in_the_form(String cardType, String cardNo, String cardholderName, String verificationCode) throws Throwable {
+    public void I_fill_in_the_payment_form(String cardType, String cardNo, String cardholderName, String verificationCode) throws Throwable {
         copa.fillPaymentInfo(cardType, cardNo, cardholderName, verificationCode);
     }
 
     @Then("^I should go back to menu page$")
-    public void I_should_see_successfuly_message() throws Throwable {
+    public void I_should_go_back_to_menu_page() throws Throwable {
         Assert.assertTrue(BrowserDriver.getCurrentDriver().getTitle().equals(_Constants.MenuPageTitle));
     }
 }

@@ -17,7 +17,7 @@ public class TestCase004StepsDef {
         ttpa = new TalkTeaPageAction();
     }
 
-    @When("^I fill in the form with \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" and submit$")
+    @When("^I fill in the form with \'([^\']*)\', \'([^\']*)\', \'([^\']*)\', \'([^\']*)\' and submit$")
     public void I_fill_in_the_form(String name, String email, String subject, String message) throws Throwable {
         ttpa.sendEmail(name, email, subject, message);
     }
