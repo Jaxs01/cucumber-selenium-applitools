@@ -1,7 +1,4 @@
 language: java
-script: mvn clean test
+script: mvn clean compile test
 addons:
   firefox: "45.0"
-
-jdk:
-  - oraclejdk7
