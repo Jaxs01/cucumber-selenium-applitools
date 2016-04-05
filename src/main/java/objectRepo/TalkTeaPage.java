@@ -15,8 +15,4 @@ public class TalkTeaPage {
     public WebElement textSubject;
     @FindBy(xpath = ".//*[@id='form_78ea690540a24bd8b9dcfbf99e999fea']/div[1]/div[4]/textarea")
     public WebElement textareaMessage;
-    @FindBy(className = "form-submit")
-    public WebElement btnSubmit;
-    @FindBy(id = ".//*[@id='msg_78ea690540a24bd8b9dcfbf99e999fea']")
-    public WebElement textSuccessfulMsg;
 }

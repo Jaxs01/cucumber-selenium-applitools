@@ -52,14 +52,16 @@ public class TalkTeaPageAction {
         ttp.textEmail.sendKeys(email);
         ttp.textSubject.sendKeys(subject);
         ttp.textareaMessage.sendKeys(message);
-        ttp.btnSubmit.click();
+        WebDriverWait wait = new WebDriverWait(driver, 60);
+        WebElement btnSubmit = wait.until(ExpectedConditions.elementToBeClickable(By.className("form-submit")));
+        btnSubmit.click();
     }
 
     /**
      * Assert if the form is submitted successfully or not
      */
     public void assertSuccessful() {
-        WebDriverWait wait = new WebDriverWait(driver, 35);
+        WebDriverWait wait = new WebDriverWait(driver, 60);
         WebElement textSuccessfulMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='msg_78ea690540a24bd8b9dcfbf99e999fea']")));
         Assert.assertEquals("Thank you sending us your information. We will get back to you with your Chai :)", textSuccessfulMsg.getText());
     }
