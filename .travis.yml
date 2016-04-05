@@ -1,0 +1,4 @@
+language: java
+script: mvn verify
+addons:
+  firefox: "45.0"
