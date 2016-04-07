@@ -1,4 +1,10 @@
 language: java
-script: mvn clean compile test
+
+jdk:
+  - oraclejdk8
+
 addons:
   firefox: "45.0"
+  
+script:
+  - mvn clean install -B
