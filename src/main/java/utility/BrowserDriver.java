@@ -35,20 +35,25 @@ public class BrowserDriver {
                         // TODO: Error here...
                         System.setProperty("webdriver.chrome.driver",
                                 "src/main/resources/chromedriver.exe");
-                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.chrome());
+
+//                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.chrome());
+                        driver = new ChromeDriver();
                         break;
                     case "safari":
                         driver = new SafariDriver();
                         break;
                     case "firefox":
                     default:
-                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.firefox());
+//                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.firefox());
+                        driver = new FirefoxDriver();
                         break;
                 }
                 driver.manage().window().maximize();
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } finally {
+            }
+//            catch (MalformedURLException e) {
+//                e.printStackTrace();
+//            }
+            finally {
                 Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
             }
         }
@@ -72,6 +77,7 @@ public class BrowserDriver {
 
     /**
      * Navigate to the specified page
+     *
      * @param url       page URL
      * @param pageTitle the title of page
      */
