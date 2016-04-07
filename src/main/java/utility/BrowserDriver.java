@@ -3,10 +3,15 @@ package utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by zhangd on 4/04/2016.
@@ -27,19 +32,22 @@ public class BrowserDriver {
             try {
                 switch (browser) {
                     case "chrome":
+                        // TODO: Error here...
                         System.setProperty("webdriver.chrome.driver",
                                 "src/main/resources/chromedriver.exe");
-                        driver = new ChromeDriver();
+                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.chrome());
                         break;
                     case "safari":
                         driver = new SafariDriver();
                         break;
                     case "firefox":
                     default:
-                        driver = new FirefoxDriver();
+                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.firefox());
                         break;
                 }
                 driver.manage().window().maximize();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
             } finally {
                 Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
             }
