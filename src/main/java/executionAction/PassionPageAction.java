@@ -35,12 +35,4 @@ public class PassionPageAction {
             e.printStackTrace();
         }
     }
-
-    /**
-     * Capture Passion Page's logo
-     */
-    public void capturePassionPageLogo() {
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[7]/div/div/img")), _Constants.PassionPageScreenshot);
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[6]/div/div/img")), _Constants.PassionPageScreenshot);
-    }
 }

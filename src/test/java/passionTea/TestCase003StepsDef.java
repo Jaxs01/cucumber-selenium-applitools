@@ -6,7 +6,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import executionAction.MenuPageAction;
-import executionAction.PassionPageAction;
 import org.junit.Assert;
 import utility.BrowserDriver;
 
@@ -19,11 +18,6 @@ public class TestCase003StepsDef {
     @Given("^I open PassionTea menu page URL$")
     public void I_open_PassionTea_menu_page_URL() throws Throwable {
         mpa = new MenuPageAction();
-    }
-
-    @When("^I capture picture of menu page$")
-    public void I_captured_picture_of_menu_page() throws Throwable {
-        mpa.captureMenuPageLogo();
     }
 
     @And("^I check out \"([^\"]*)\"$")

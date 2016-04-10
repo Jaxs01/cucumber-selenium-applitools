@@ -37,15 +37,6 @@ public class MenuPageAction {
     }
 
     /**
-     * Capture Menu Page's logo
-     */
-    public void captureMenuPageLogo() {
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[20]/div/div/img")), _Constants.MenuPageScreenshot);
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[28]/div/div/img")), _Constants.MenuPageScreenshot);
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[24]/div/div/img")), _Constants.MenuPageScreenshot);
-    }
-
-    /**
      * Check out one type of tea
      * @param teaType
      */

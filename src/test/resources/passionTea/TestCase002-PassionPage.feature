@@ -6,5 +6,4 @@ Feature: PassionTea Passion Page
 
   Scenario: Navigate to PassionTea's Passion Page
     When I open PassionTea passion page URL
-    And I capture picture of passion page
     Then I should land at correct passion page

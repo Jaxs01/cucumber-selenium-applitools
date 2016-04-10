@@ -35,7 +35,6 @@ public class BrowserDriver {
                         // TODO: Error here...
                         System.setProperty("webdriver.chrome.driver",
                                 "src/main/resources/chromedriver.exe");
-
 //                        driver = new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), DesiredCapabilities.chrome());
                         driver = new ChromeDriver();
                         break;

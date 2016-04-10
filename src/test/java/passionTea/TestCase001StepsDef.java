@@ -24,11 +24,6 @@ public class TestCase001StepsDef {
         wpa.assertWelcomePageLink();
     }
 
-    @And("^I capture picture of welcome page$")
-    public void I_captured_picture_of_home_page() throws Throwable {
-        wpa.captureWelcomePageLogo();
-    }
-
     @Then("^I should land at correct welcome page$")
     public void I_should_land_at_correct_welcome_page() throws Throwable {
         Assert.assertTrue(BrowserDriver.getCurrentDriver().getTitle().equals(_Constants.WelcomePageTitle));

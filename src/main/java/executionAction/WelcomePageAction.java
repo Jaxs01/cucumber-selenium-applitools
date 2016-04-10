@@ -60,13 +60,4 @@ public class WelcomePageAction {
             e.printStackTrace();
         }
     }
-
-    /**
-     * Capture Welcome Page's logo
-     */
-    public void captureWelcomePageLogo() {
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("//*[@id=\"wsb-element-00000000-0000-0000-0000-000450914895\"]/div/div/a/img")), _Constants.WelcomePageScreenshot);
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("//*[@id=\"wsb-element-00000000-0000-0000-0000-000450914892\"]/div/div/a/img")), _Constants.WelcomePageScreenshot);
-        PublicFunctions.captureLogo(driver.findElement(By.xpath("//*[@id=\"wsb-element-00000000-0000-0000-0000-000450914891\"]/div/div/a/img")), _Constants.WelcomePageScreenshot);
-    }
 }

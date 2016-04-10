@@ -19,11 +19,6 @@ public class TestCase002StepsDef {
         ppa = new PassionPageAction();
     }
 
-    @And("^I capture picture of passion page$")
-    public void I_captured_picture_of_passion_page() throws Throwable {
-        ppa.capturePassionPageLogo();
-    }
-
     @Then("^I should land at correct passion page$")
     public void I_should_land_at_correct_passion_page() throws Throwable {
         Assert.assertTrue(BrowserDriver.getCurrentDriver().getTitle().equals(_Constants.PassionPageTitle));
