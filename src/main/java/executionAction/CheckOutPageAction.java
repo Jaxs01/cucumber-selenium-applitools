@@ -2,41 +2,29 @@ package executionAction;
 
 import config._Constants;
 import objectRepo.CheckOutPage;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import utility.BrowserDriver;
-import utility.PublicFunctions;
-
-import java.io.File;
-import java.io.IOException;
+import utility.DriverFactory;
 
 /**
  * Created by zhangd on 4/04/2016.
  */
 public class CheckOutPageAction {
     CheckOutPage cop = new CheckOutPage();
-    WebDriver driver = BrowserDriver.getCurrentDriver();
+    WebDriver driver = DriverFactory.getCurrentDriver();
 
     /**
      * Constructor
      * Load the page, initiate page elements and clean files in the directory
      */
     public CheckOutPageAction() {
-        BrowserDriver.loadPage(_Constants.CheckOutPageURL, _Constants.CheckOutPageTitle);
+        DriverFactory.loadPage(_Constants.CheckOutPageURL, _Constants.CheckOutPageTitle);
         PageFactory.initElements(driver, cop);
-
-        // Clean previous files in the directory
-        try {
-            FileUtils.cleanDirectory(new File(_Constants.CheckOutScreenshot));
-            PublicFunctions.captureScreenShot(driver, _Constants.CheckOutScreenshot, "TestCase005");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
      * Fill in the customer form
+     *
      * @param email
      * @param name
      * @param address
@@ -49,6 +37,7 @@ public class CheckOutPageAction {
 
     /**
      * Fill in the payment form
+     *
      * @param cardType
      * @param cardNo
      * @param cardholderName

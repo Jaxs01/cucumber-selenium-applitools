@@ -16,7 +16,7 @@ import java.net.URL;
 /**
  * Created by zhangd on 4/04/2016.
  */
-public class BrowserDriver {
+public class DriverFactory {
     private static WebDriver driver;
 
     public synchronized static WebDriver getCurrentDriver() {
