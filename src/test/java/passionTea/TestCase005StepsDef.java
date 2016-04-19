@@ -30,7 +30,7 @@ public class TestCase005StepsDef {
         copa.fillPaymentInfo(cardType, cardNo, cardholderName, verificationCode);
     }
 
-    @And("^I want to do UI testing on TalkTea Page$")
+    @And("^I want to do UI testing on Checkout Page$")
     public void I_want_to_do_UI_testing() throws Throwable {
         copa.eyesTest();
     }
