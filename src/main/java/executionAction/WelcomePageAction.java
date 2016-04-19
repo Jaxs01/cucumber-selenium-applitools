@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import utility.DriverFactory;
+import utility.EyesFactory;
 
 /**
  * Created by zhangd on 4/04/2016.
@@ -45,5 +46,12 @@ public class WelcomePageAction {
             // TODO: handle exception
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Visual Validation Tests
+     */
+    public void eyesTest() {
+        EyesFactory.visualValidation("PassionTea - Welcome", 1920, 1080, _Constants.WelcomePageTitle);
     }
 }

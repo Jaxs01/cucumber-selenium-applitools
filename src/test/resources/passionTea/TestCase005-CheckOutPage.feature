@@ -8,6 +8,7 @@ Feature: PassionTea CheckOut Page
     Given I open PassionTea checkout page URL
     When I fill in the customer form with '<Email>', '<Name>' and '<Address>'
     And I fill in the payment form with '<Card Type>', '<Card Number>', '<Cardholder Name>' and '<Verification Code>'
+    And I want to do UI testing on Checkout Page
     Then I should go back to menu page
 
     Examples:

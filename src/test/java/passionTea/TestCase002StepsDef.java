@@ -19,8 +19,8 @@ public class TestCase002StepsDef {
         ppa = new PassionPageAction();
     }
 
-    @And("^I check if there is any UI difference$")
-    public void I_want_to_do_eyesTest() {
+    @And("^I want to do UI testing on Passion Page$")
+    public void I_want_to_do_UI_testing() throws Throwable {
         ppa.eyesTest();
     }
 

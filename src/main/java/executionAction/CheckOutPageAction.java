@@ -5,6 +5,7 @@ import objectRepo.CheckOutPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import utility.DriverFactory;
+import utility.EyesFactory;
 
 /**
  * Created by zhangd on 4/04/2016.
@@ -49,5 +50,12 @@ public class CheckOutPageAction {
         cop.txtCardHolderName.sendKeys(cardholderName);
         cop.txtVerificationCode.sendKeys(verificationCode);
         cop.btnPlaceOrder.click();
+    }
+
+    /**
+     * Visual Validation Tests
+     */
+    public void eyesTest() {
+        EyesFactory.visualValidation("PassionTea - Checkout", 1920, 1080, _Constants.CheckOutPageTitle);
     }
 }

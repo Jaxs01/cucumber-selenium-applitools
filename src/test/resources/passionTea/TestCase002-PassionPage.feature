@@ -6,5 +6,5 @@ Feature: PassionTea Passion Page
 
   Scenario: Navigate to PassionTea's Passion Page
     When I open PassionTea passion page URL
-    And I check if there is any UI difference
+    And I want to do UI testing on Passion Page
     Then I should land at correct passion page

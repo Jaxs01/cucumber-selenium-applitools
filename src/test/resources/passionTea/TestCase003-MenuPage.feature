@@ -7,4 +7,5 @@ Feature: PassionTea Menu Page
   Scenario: Navigate to PassionTea's Menu Page
     Given I open PassionTea menu page URL
     And I check out "Oolong Tea"
+    And I want to do UI testing on Menu Page
     Then I should land at check out page

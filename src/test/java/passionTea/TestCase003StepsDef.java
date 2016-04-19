@@ -24,6 +24,11 @@ public class TestCase003StepsDef {
         mpa.clickCheckOut(tea);
     }
 
+    @And("^I want to do UI testing on Menu Page$")
+    public void I_want_to_do_UI_testing() throws Throwable {
+        mpa.eyesTest();
+    }
+
     @Then("^I should land at check out page$")
     public void I_should_land_at_check_out_page() throws Throwable {
         Assert.assertTrue(DriverFactory.getCurrentDriver().getTitle().equals(_Constants.CheckOutPageTitle));

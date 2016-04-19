@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utility.DriverFactory;
+import utility.EyesFactory;
 
 /**
  * Created by zhangd on 4/04/2016.
@@ -52,5 +53,12 @@ public class TalkTeaPageAction {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         WebElement textSuccessfulMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='msg_78ea690540a24bd8b9dcfbf99e999fea']")));
         Assert.assertEquals("Thank you sending us your information. We will get back to you with your Chai :)", textSuccessfulMsg.getText());
+    }
+
+    /**
+     * Visual Validation Tests
+     */
+    public void eyesTest() {
+        EyesFactory.visualValidation("PassionTea - Talk to Tea", 1920, 1080, _Constants.TalkTeaPageTitle);
     }
 }

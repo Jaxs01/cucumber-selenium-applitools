@@ -5,6 +5,7 @@ import objectRepo.MenuPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import utility.DriverFactory;
+import utility.EyesFactory;
 
 /**
  * Created by zhangd on 4/04/2016.
@@ -38,5 +39,12 @@ public class MenuPageAction {
                 mp.btnCheckOutOolongTea.click();
                 break;
         }
+    }
+
+    /**
+     * Visual Validation Tests
+     */
+    public void eyesTest() {
+        EyesFactory.visualValidation("PassionTea - Menu", 1920, 1080, _Constants.MenuPageTitle);
     }
 }

@@ -7,6 +7,7 @@ Feature: PassionTea TalkTeaPage Page
   Scenario Outline: Navigate to PassionTea's Menu Page
     Given I open PassionTea talk-to-tea page URL
     When I fill in the form with '<Name>', '<Email>', '<Subject>', '<Message>' and submit
+    And I want to do UI testing on TalkTea Page
     Then I should see successful message
 
     Examples:

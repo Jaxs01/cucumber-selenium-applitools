@@ -7,4 +7,5 @@ Feature: PassionTea Welcome Page
   Scenario: Navigate to PassionTea's Welcome Page
     When I open PassionTea welcome page URL
     And I check side navigation bar
+    And I want to do UI testing on Welcome Page
     Then I should land at correct welcome page

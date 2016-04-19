@@ -24,6 +24,11 @@ public class TestCase001StepsDef {
         wpa.assertWelcomePageLink();
     }
 
+    @And("^I want to do UI testing on Welcome Page$")
+    public void I_want_to_do_UI_testing() throws Throwable {
+        wpa.eyesTest();
+    }
+
     @Then("^I should land at correct welcome page$")
     public void I_should_land_at_correct_welcome_page() throws Throwable {
         Assert.assertTrue(DriverFactory.getCurrentDriver().getTitle().equals(_Constants.WelcomePageTitle));

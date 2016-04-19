@@ -1,5 +1,6 @@
 package passionTea;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,6 +20,11 @@ public class TestCase004StepsDef {
     @When("^I fill in the form with \'([^\']*)\', \'([^\']*)\', \'([^\']*)\', \'([^\']*)\' and submit$")
     public void I_fill_in_the_form(String name, String email, String subject, String message) throws Throwable {
         ttpa.sendEmail(name, email, subject, message);
+    }
+
+    @And("^I want to do UI testing on TalkTea Page$")
+    public void I_want_to_do_UI_testing() throws Throwable {
+        ttpa.eyesTest();
     }
 
     @Then("^I should see successful message$")

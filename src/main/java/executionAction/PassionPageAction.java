@@ -27,6 +27,6 @@ public class PassionPageAction {
      * Visual Validation Tests
      */
     public void eyesTest() {
-        EyesFactory.visualValidation("PassionTea", 1024, 768, _Constants.PassionPageTitle);
+        EyesFactory.visualValidation("PassionTea - Passion", 1920, 1080, _Constants.PassionPageTitle);
     }
 }

@@ -1,6 +1,7 @@
 package passionTea;
 
 import config._Constants;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -27,6 +28,11 @@ public class TestCase005StepsDef {
     @When("^I fill in the payment form with \'([^\"]*)\', \'([^\"]*)\', \'([^\"]*)\' and \'([^\"]*)\'$")
     public void I_fill_in_the_payment_form(String cardType, String cardNo, String cardholderName, String verificationCode) throws Throwable {
         copa.fillPaymentInfo(cardType, cardNo, cardholderName, verificationCode);
+    }
+
+    @And("^I want to do UI testing on TalkTea Page$")
+    public void I_want_to_do_UI_testing() throws Throwable {
+        copa.eyesTest();
     }
 
     @Then("^I should go back to menu page$")
